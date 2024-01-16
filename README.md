@@ -1,6 +1,11 @@
 # Football Team Management Microservice
 
-This microservice is part of a football team management system and is responsible for handling operations related to football teams.
+This project is talking about the Football Management System, designed to manage various aspects of football. The system consists of multiple microservices, each focusing on specific functionalities : 
+- Team service
+- Player service
+- Match service
+- Stats service
+- Eureka server ( service to plug All services as a client of this server )
 
 ## Technologies Used
 
@@ -13,6 +18,7 @@ This microservice is part of a football team management system and is responsibl
 - Actuator for monitoring endpoints
 
 ## Project Structure
+all services have the same structure, here is an example :
 ```
 team-service/
 |-- src/
@@ -39,11 +45,32 @@ team-service/
 ```
 
 ## Endpoints
+<p>Team service :</p>
 
 - `GET /teams/{id}`: Retrieve details of a team by its identifier.
 - `POST /teams`: Add a new team.
 - `PUT /teams/{id}`: Update information of an existing team.
 - `DELETE /teams/{id}`: Delete a team by its identifier.
+  
+<p>Player service :</p>
+
+- `GET /players/{id}`: Retrieve details of a player by their identifier.
+- `POST /players`: Add a new player.
+- `PUT /players/{id}`: Update information of an existing player.
+- `DELETE /players/{id}`: Delete a player by their identifier.
+
+<p>Match service :</p>
+
+- `GET /matches/{id}`: Retrieve details of a match by its identifier.
+- `POST /matches`: Add a new match.
+- `PUT /matches/{id}`: Update information of an existing match.
+- `DELETE /matches/{id}`: Delete a match by its identifier.
+
+<p>Stats service :</p>
+
+- `GET /team-stats/{teamId}`: Retrieve season statistics for a team.
+- `GET /player-stats/{playerId}`: Retrieve season statistics for a player.
+
 
 ## Setup
 
