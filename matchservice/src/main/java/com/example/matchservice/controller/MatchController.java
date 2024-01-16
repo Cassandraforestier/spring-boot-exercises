@@ -20,6 +20,7 @@ public class MatchController {
         this.matchService = matchService;
     }
 
+
     @GetMapping("/{id}")
     @ApiOperation(value = "Get a match by ID", response = Match.class)
     public Match getMatch(@PathVariable Long id) {

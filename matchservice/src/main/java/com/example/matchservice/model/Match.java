@@ -14,6 +14,10 @@ public class Match {
         this.result = result;
     }
 
+    public Match() {
+
+    }
+
     public Long getId() {
         return id;
     }

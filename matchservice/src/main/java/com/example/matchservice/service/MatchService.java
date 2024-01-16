@@ -1,6 +1,7 @@
 package com.example.matchservice.service;
 
 import com.example.matchservice.model.Match;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -17,9 +18,16 @@ public class MatchService {
         matches.add(new Match(2L, "Team C", "Team D", "Result C vs. D"));
     }
 
+    @HystrixCommand(fallbackMethod = "fallbackForGetMatchById")
     public Match getMatchById(Long id) {
         Optional<Match> matchOptional = matches.stream().filter(match -> match.getId().equals(id)).findFirst();
         return matchOptional.orElse(null);
+    }
+
+    // Fallback method for getMatchById
+    private Match fallbackForGetMatchById(Long id) {
+        // Fallback logic, for example, return an empty match
+        return new Match();
     }
 
     public List<Match> getAllMatches() {
