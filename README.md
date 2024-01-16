@@ -56,6 +56,7 @@ team-service/
 
 - Access Swagger documentation: `http://localhost:8080/swagger-ui.html`
 - Monitor endpoints using Actuator: `http://localhost:8080/actuator`
+- Hystrix stream : `http://localhost:8083/hystrix.stream`
 - Swagger Player management : `http://localhost:8011/swagger-ui.html#/Player_Management`
 - Swagger Match management : `http://localhost:8083/swagger-ui.html#/Match_Controller`
 - Swagger Team management : `http://localhost:8081/swagger-ui.html#/Match_Controller`
@@ -63,11 +64,20 @@ team-service/
   
 ## pictures of working project 
 
-- Eureka server listening to all microservices clients :
+- <strong>Eureka server listening to all microservices clients</strong> :
 ![eureka](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/9a3c3e50-f6c1-448a-9566-88a799f3d233)
-- 2 examples of Swagger :
+
+- <strong>2 examples of Swagger</strong> :
 ![matchswagger](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/b3dcbfca-f292-40db-94fb-ea60cc104f07)
 ![playerswagger](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/d518cd5f-c0aa-46a8-a87a-2352a4cfbea4)
+
+- <strong>Example of Hystrix stream</strong> :
+<p>You can see here the postman url to find informations of the first match :</p>
+![postmanMatch](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/7bfee190-400e-4cf9-895d-5fafaee08d8b)
+<p>And here you can see the stream of hystrix catching this url</p>
+![hystrixMatchStream](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/77795ea5-0838-408c-a226-d9d7bb5cbf7e)
+
+
 
 ## Notes
 
