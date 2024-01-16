@@ -81,6 +81,9 @@ team-service/
 - <strong> Example of actuator on Match </strong>:
 ![actuatorMatch](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/32b9c427-609e-4db6-ada3-7468ed80fbd6)
 
+## all parts that is not implemented :
+1. Part 8 about Load balancing
+2. Part 9 about Kubernetes and Docker
 
 ## Notes
 
