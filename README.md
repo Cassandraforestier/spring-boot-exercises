@@ -77,8 +77,6 @@ team-service/
 <p>And here you can see the stream of hystrix catching this url</p>
 ![hystrixMatchStream](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/77795ea5-0838-408c-a226-d9d7bb5cbf7e)
 
-
-
 ## Notes
 
 - This microservice registers itself with Eureka for service discovery.
