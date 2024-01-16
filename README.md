@@ -49,8 +49,9 @@ team-service/
 
 1. Clone the repository.
 2. Import the project into IntelliJ.
-3. Make sure you have Java 11 and Maven installed.
-4. Run all the service application class to start microservices.
+3. Run all microservices individually.
+4. Make sure you have Java 11 and Maven installed.
+5. Run all the service application class to start microservices.
 
 ## Usage
 
@@ -76,6 +77,10 @@ team-service/
 ![postmanMatch](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/7bfee190-400e-4cf9-895d-5fafaee08d8b)
 <p>And here you can see the stream of hystrix catching this url</p>
 ![hystrixMatchStream](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/77795ea5-0838-408c-a226-d9d7bb5cbf7e)
+
+- <strong> Example of actuator on Match </strong>:
+![actuatorMatch](https://github.com/Cassandraforestier/spring-boot-exercises/assets/39778007/32b9c427-609e-4db6-ada3-7468ed80fbd6)
+
 
 ## Notes
 
