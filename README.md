@@ -111,11 +111,3 @@ team-service/
 ## all parts that is not implemented :
 1. Part 8 about Load balancing
 2. Part 9 about Kubernetes and Docker
-
-## Notes
-
-- This microservice registers itself with Eureka for service discovery.
-- It utilizes Ribbon for client-side load balancing.
-- Hystrix is used for circuit breaking to enhance system resilience.
-
-Feel free to customize the code and configuration based on your specific requirements.
