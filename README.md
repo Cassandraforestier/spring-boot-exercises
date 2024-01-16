@@ -1,4 +1,4 @@
-# TeamService - Football Team Management Microservice
+# Football Team Management Microservice
 
 This microservice is part of a football team management system and is responsible for handling operations related to football teams.
 
